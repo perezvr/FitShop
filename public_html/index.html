@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/mustache/mustache.js" ></script>  
+        <script src="js/libs/mdl/material.min.js"></script>
+        <link rel="stylesheet" href="js/libs/mdl/material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <!-- The drawer is always open in large screens. The header is always shown,
+      even in small screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+             mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                         mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon"
+                               for="fixed-header-drawer-exp">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample"
+                                   id="fixed-header-drawer-exp">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Title</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <!-- List items with avatar and action -->
+                <style>
+                    .demo-list-action {
+                        width: 100%;
+                    }
+                </style>
+
+                <div class="demo-list-action mdl-list">
+                    <div class="mdl-list__item" style="width: 100%;">
+                        <span class="mdl-list__item-primary-content"  >
+                            <img src="http://pointshop.com.br/loja/product_images/o/237/Moleton-Surf-Hurley-5-Pe%C3%A7as-Atacado-Pointshop-Loja-Importados-Cinza-Escuro__47127_tiny.jpg" />
+                            <span>Moleton OffShore </span><br>
+                            <span><b>R$ 169,00</b> </span>
+                        </span>
+                        <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                    </div>
+                    <div class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-avatar">person</i>
+                            <span>Aaron Paul</span>
+                        </span>
+                        <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                    </div>
+                    <div class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-avatar">person</i>
+                            <span>Bob Odenkirk</span>
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                        </span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
